@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block main %} 
+
+<div class="d-flex flex-column justify-content-center align-items-center mt-4">
+    <h1 class="border-bottom">Bus Route System</h1>
+    <div class="d-flex mt-2">
+        <a href="{% url 'bus_route:bus-list' %}" class="btn btn-primary mx-2">Buses</a>
+        <a href="{% url 'bus_route:route-list' %}" class="btn btn-primary mx-2">Routes</a>
+    </div>
+</div>
+
+{% endblock main %}
